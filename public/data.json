@@ -1,0 +1,171 @@
+    {
+        "delayed": {
+            "orderId": "ORD-10234",
+            "product": {
+                "name": "Wireless Headphones — Slate Grey",
+                "qty": 1
+            },
+            "status": "out_for_delivery",
+            "banner": {
+                "tone": "warn",
+                "label": "Running late",
+                "headline": "Out for delivery — delayed",
+                "sub": "Your courier is behind schedule today."
+            },
+            "alert": {
+                "tone": "warn",
+                "icon": "⏱",
+                "title": "This delivery has passed its estimate",
+                "body": "It was expected by 6:00 PM yesterday. We're following up with the courier — you don't need to do anything yet."
+            },
+            "estimate": {
+                "label": "New estimated delivery",
+                "value": "Today, by 8:00 PM",
+                "warn": true
+            },
+            "timeline": [
+                {
+                    "label": "Processing",
+                    "time": "Sep 20",
+                    "state": "done"
+                },
+                {
+                    "label": "Shipped",
+                    "time": "Sep 21",
+                    "state": "done"
+                },
+                {
+                    "label": "Out for delivery",
+                    "time": "Sep 23",
+                    "state": "current"
+                },
+                {
+                    "label": "Delivered",
+                    "time": "",
+                    "state": "todo"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "primary",
+                    "text": "Contact support"
+                },
+                {
+                    "type": "secondary",
+                    "text": "Report a delivery issue"
+                }
+            ],
+            "showDetails": true
+        },
+        "deliveredNotReceived": {
+            "orderId": "ORD-10235",
+            "product": {
+                "name": "Ceramic Pour-Over Coffee Set",
+                "qty": 1
+            },
+            "status": "delivered",
+            "banner": {
+                "tone": "bad",
+                "label": "Needs attention",
+                "headline": "Marked as delivered",
+                "sub": "Our system shows this was delivered on Sep 25, 3:40 PM."
+            },
+            "alert": {
+                "tone": "bad",
+                "icon": "⚠",
+                "title": "Didn't receive this order?",
+                "body": "Let us know and we'll investigate with the courier — most cases are resolved within 48 hours."
+            },
+            "estimate": {
+                "label": "Delivered on",
+                "value": "Sep 25, 3:40 PM",
+                "warn": false
+            },
+            "timeline": [
+                {
+                    "label": "Processing",
+                    "time": "Sep 21",
+                    "state": "done"
+                },
+                {
+                    "label": "Shipped",
+                    "time": "Sep 22",
+                    "state": "done"
+                },
+                {
+                    "label": "Out for delivery",
+                    "time": "Sep 25",
+                    "state": "done"
+                },
+                {
+                    "label": "Delivered",
+                    "time": "Sep 25",
+                    "state": "done"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "danger",
+                    "text": "I haven't received this"
+                },
+                {
+                    "type": "secondary",
+                    "text": "Contact support"
+                }
+            ],
+            "showDetails": true
+        },
+        "notAvailable": {
+            "orderId": "ORD-10236",
+            "product": {
+                "name": "Linen Table Runner, Olive",
+                "qty": 2
+            },
+            "status": "processing",
+            "banner": {
+                "tone": "neutral",
+                "label": "Processing",
+                "headline": "Your order is being prepared",
+                "sub": "Tracking details will appear here once it ships."
+            },
+            "empty": {
+                "icon": "📦",
+                "title": "Tracking not available yet",
+                "desc": "We'll notify you as soon as this order ships and tracking info is ready."
+            },
+            "estimate": {
+                "label": "Estimated dispatch",
+                "value": "Within 1–2 business days",
+                "warn": false
+            },
+            "timeline": [
+                {
+                    "label": "Processing",
+                    "time": "Sep 26",
+                    "state": "current"
+                },
+                {
+                    "label": "Shipped",
+                    "time": "",
+                    "state": "todo"
+                },
+                {
+                    "label": "Out for delivery",
+                    "time": "",
+                    "state": "todo"
+                },
+                {
+                    "label": "Delivered",
+                    "time": "",
+                    "state": "todo"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "secondary",
+                    "text": "Contact support"
+                }
+            ],
+            "showDetails": false
+        }
+    }
