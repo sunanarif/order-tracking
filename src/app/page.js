@@ -4,11 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import DelayedPage from "./delayed/page";
 import ToggolingButton from "@/Component/ToggolingButton";
+import path from "path";
+import fs from "fs";
 
+const urlMaker = (fileName) => {
+    const filePath = path.join(process.cwd(), "public", fileName);
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    const data = JSON.parse(fileContents);
+    return data;
+};
 export default async function Home() {
-  const res = await fetch(`${process.env.BASE_URL}/data.json`)
-  const data = await res.json()
-  console.log(data)
+  const data =urlMaker("data.json");
   return (
     <div className="flex justify-center items-center h-screen flex-col gap-3">
       
