@@ -11,7 +11,7 @@ A mobile Order Tracking screen for an e-commerce app, built with Next.js, Tailwi
 
 ```bash
 git clone https://github.com/sunanarif/order-tracking.git
-cd ordertracking
+cd order-tracking
 npm install
 ```
 
