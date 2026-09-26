@@ -6,7 +6,7 @@ import DelayedPage from "./delayed/page";
 import ToggolingButton from "@/Component/ToggolingButton";
 
 export default async function Home() {
-  const res = await fetch('http://localhost:3000/data.json')
+  const res = await fetch(`${process.env.BASE_URL}/data.json`)
   const data = await res.json()
   console.log(data)
   return (
